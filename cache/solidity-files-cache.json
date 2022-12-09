@@ -44,8 +44,8 @@
       ]
     },
     "/home/roholah/Desktop/Uniswap-Clones/UniswapV1/contracts/AtomToken.sol": {
-      "lastModificationDate": 1670056042130,
-      "contentHash": "23ce791ef94c3612e598b36bcfcaadaa",
+      "lastModificationDate": 1670076407923,
+      "contentHash": "c1cef82df5084d36a6f8560a33f5ddef",
       "sourceName": "contracts/AtomToken.sol",
       "solcConfig": {
         "version": "0.8.8",
@@ -266,9 +266,57 @@
       ]
     },
     "/home/roholah/Desktop/Uniswap-Clones/UniswapV1/contracts/poolV1.sol": {
-      "lastModificationDate": 1670075276365,
-      "contentHash": "46fe2902d13b8b7c257960e7a010e635",
+      "lastModificationDate": 1670617071881,
+      "contentHash": "f0d882c1deaaef84bba102685061efd5",
       "sourceName": "contracts/poolV1.sol",
+      "solcConfig": {
+        "version": "0.8.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./poolV1Interface.sol"
+      ],
+      "versionPragmas": [
+        "0.8.8"
+      ],
+      "artifacts": [
+        "PoolV1",
+        "factory"
+      ]
+    },
+    "/home/roholah/Desktop/Uniswap-Clones/UniswapV1/contracts/poolV1Interface.sol": {
+      "lastModificationDate": 1670477427917,
+      "contentHash": "5833ce0a359f6c7928455a6fb194ae05",
+      "sourceName": "contracts/poolV1Interface.sol",
       "solcConfig": {
         "version": "0.8.8",
         "settings": {
@@ -308,7 +356,100 @@
         "0.8.8"
       ],
       "artifacts": [
-        "PoolV1"
+        "PoolV1Interface"
+      ]
+    },
+    "/home/roholah/Desktop/Uniswap-Clones/UniswapV1/contracts/factory.sol": {
+      "lastModificationDate": 1670078041938,
+      "contentHash": "07e6c7a8a01dd50aa695fb91f13e1dad",
+      "sourceName": "contracts/factory.sol",
+      "solcConfig": {
+        "version": "0.8.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./poolV1.sol"
+      ],
+      "versionPragmas": [
+        "0.8.8"
+      ],
+      "artifacts": [
+        "Factory"
+      ]
+    },
+    "/home/roholah/Desktop/Uniswap-Clones/UniswapV1/contracts/CostumeERC20.sol": {
+      "lastModificationDate": 1670479820704,
+      "contentHash": "2ef3845c08c93389a5a3c5396efa2d32",
+      "sourceName": "contracts/CostumeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.8"
+      ],
+      "artifacts": [
+        "CostumeERC20"
       ]
     }
   }
